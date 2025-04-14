@@ -8,8 +8,12 @@ RUN apt-get update && apt-get install -y \
     xfonts-100dpi \
     xfonts-75dpi \
     xfonts-scalable \
-    xfonts-cyrillic \
     x11-apps \
+    libx11-6 \
+    libxext6 \
+    libxrender1 \
+    libxtst6 \
+    libxi6 \
     && rm -rf /var/lib/apt/lists/*
 
 # Set up virtual display
